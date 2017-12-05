@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>UNSION</title>
+    <meta name = "viewport" content = "width = device-width">
+    <link rel="icon" type="image/x-icon" href="resources/favicon.png" />
+
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/3ac768d8-7a5c-4fd8-b377-f61d7f1760fa.css"/>
+    <link type="text/css" rel="stylesheet" href="resources/main.css" />
+  </head>
+
+  <body>
+
+    <h1 id="main-title">UNSION</h1>
+
+    <p id="sub-head">Click squares to create sounds.</p>
+
+    </p>
+
+    <div id="mobile-demo" style="display: none;">
+      <p>
+        The Unison drum machine is only available on desktop. Switch to a
+        computer to make sounds.
+      </p>
+    </div>
+
+    <div id="desktop-demo">
+
+      <!-- Canvas element where the drum machine is drawn -->
+      <canvas id="screen" width="636px" height="286px"></canvas>
+
+      <div id="controls">
+        <input type="button" id="reset-button" value="Reset" onClick="window.location.reload()">
+        <div id="post-button">Post Track</div>
+      </div>
+
+      <!-- Load the code that runs the drum machine -->
+      <script src="drum-machine.js"></script>
+    </div>
+
+   </body>
+</html>
